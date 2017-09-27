@@ -32,7 +32,11 @@ window.addEventListener('keydown', function(e) {
 		//this console log everything that transition
 		if (e.propertyName !== 'transform') return;
 		// if the propertyName Does not equal to transform skip it
-		console.log(e.propertyName);
+		// console.log(e.propertyName);
+		// console.log(this)
+		//console log test on which transform and the key in this
+		this.classList.remove('playing');
+
 	}
 	
 
