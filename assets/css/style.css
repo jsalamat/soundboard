@@ -7,6 +7,10 @@ body, html {
 	background-size: cover;
 }
 
+.footer {
+	color: white;
+}
+
 .keys {
   display: flex;
   flex: 1;
