@@ -12,7 +12,7 @@ window.addEventListener('keydown', function(e) {
 //to select key element
 	const key = document.querySelector(`.key[data-key="${e.keyCode}"]`)
 	// to test selection of key element
-		console.log(key);
+		// console.log(key);
 
 //stop the function from running all together if there no audio
 	if(!audio) return;
@@ -21,5 +21,11 @@ window.addEventListener('keydown', function(e) {
 //solve this by adding current time it rewind it to the start
 	audio.currentTime = 0;
 	audio.play();
+
+// adding animation by adding a class playing from css
+	key.classList.add('playing');
+	// in jquery -> key.addClass('playing')
+
+// Add transition end event once the animation stop when it happens
 
 });
