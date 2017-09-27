@@ -26,6 +26,27 @@ window.addEventListener('keydown', function(e) {
 	key.classList.add('playing');
 	// in jquery -> key.addClass('playing')
 
+//removetransition steps here------------------------------------
+	function removeTransition(e) {
+		// console.log(e); 
+		//this console log everything that transition
+		if (e.propertyName !== 'transform') return;
+		// if the propertyName Does not equal to transform skip it
+		console.log(e.propertyName);
+	}
+	
+
+//------------------------------------------------
+
 // Add transition end event once the animation stop when it happens
+// this selct all of the arrays that match
+	const keys = document.querySelectorAll('.key');
+
+// Listen for event transitionend on each one [node list]
+// When the transitionend runss we run function removeTransition
+	keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+
+// Next we remove playing by creating a function removeTransition
+
 
 });
