@@ -25,6 +25,7 @@ window.addEventListener('keydown', function(e) {
 // adding animation by adding a class playing from css
 	key.classList.add('playing');
 	// in jquery -> key.addClass('playing')
+});
 
 //removetransition steps here------------------------------------
 	function removeTransition(e) {
@@ -51,4 +52,3 @@ window.addEventListener('keydown', function(e) {
 // Next we remove playing by creating a function removeTransition
 
 //Last step is to clean up comments put events in its own function at line 1 seen at app.js
-});
